@@ -1,0 +1,17 @@
+meta {
+  name: create game
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/games
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "teamCount": 3
+  }
+}
