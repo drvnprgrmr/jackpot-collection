@@ -1,0 +1,15 @@
+meta {
+  name: get games
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/games?status=pending
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: pending
+}
